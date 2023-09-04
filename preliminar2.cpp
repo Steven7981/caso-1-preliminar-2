@@ -17,21 +17,11 @@ std::string insertar(std::string arrays[TAMANO],std:: string dato, int posicion)
             arrays[posicion+1]=arrays[posicion];
             arrays[posicion]=dato;
         }
-        for (int i = 0;i<TAMANO;i++){
-        if (!(*arrays).empty()){
-            std:: cout << arrays[i];
-        }
-        else break;
-    }
     }
     if (arrays[posicion].empty()){
         arrays[posicion]=dato;
-        for (int i = 0;i<TAMANO;i++){
-        if (!arrays[i].empty()){
-            std:: cout << arrays[i]<<" ";
     }
-}
-}
+
     if (!arrays[posicion].empty()){
         int i = contador-1;
         while (i>=posicion){
@@ -74,15 +64,6 @@ std::string borrar(std::string arrays[TAMANO],std::string palabra){
             i--;
     }
     }
-    std::cout<<" nuevo ";
-    for (int i = 0; i<5;i++){
-        if (arrays[i].empty()){
-            std::cout<<" no "<<std::endl;
-        }
-        else {
-            std::cout<< arrays[i]<<i<< std:: endl;
-        }
-        }
     
     return ("Se eliminaron todas las noticias que contenia la palabra "+ palabra);
 }
