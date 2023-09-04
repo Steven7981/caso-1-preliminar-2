@@ -67,3 +67,18 @@ std::string borrar(std::string arrays[TAMANO],std::string palabra){
     
     return ("Se eliminaron todas las noticias que contenia la palabra "+ palabra);
 }
+
+std::string mostrar(std::string arrays[TAMANO], int posicion){
+    int contador=0;
+    for (int i = 0;i<TAMANO;i++){
+        if (!arrays[i].empty()){
+            contador++;
+        }
+        else break;
+    }
+    if (posicion<=contador){
+        std::string i = std::to_string(posicion);
+        std::string dato = arrays[posicion] + " " + i;
+        return dato;
+    }
+}
