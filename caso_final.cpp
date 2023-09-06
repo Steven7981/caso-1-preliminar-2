@@ -3,6 +3,7 @@
 #include <stdio.h>
 #include <curl/curl.h>
 #include "json.hpp"
+#include "preliminar2_main.cpp"
 
 using namespace std;
 using json = nlohmann::json;
@@ -140,5 +141,6 @@ int main(void)
     vector<News *> allrecords = newsapi.getRecords();
     cout << allrecords.at(0)->getTitle() << endl;
 
+    
     return 0;
 }
