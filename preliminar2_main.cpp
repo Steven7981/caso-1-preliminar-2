@@ -15,6 +15,13 @@ std::string ordenarNoticias(std::string array [9999],int posicion, int posicion_
 
 
 
+
+
+
+
+
+
+
 void showTop5(vector <News *> noticias){
     Newsapi newsapi;
 
