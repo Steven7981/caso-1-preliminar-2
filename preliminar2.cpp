@@ -2,6 +2,8 @@
 #include <cstring>
 #include <string>
 const int TAMANO=9999;
+#ifndef _NODODOBLE_
+#define _NODODOBLE_ 1
 
 int conseguir_tamano(std::string arrays[TAMANO]){
 int contador=0;
@@ -78,3 +80,16 @@ void mostrar_todo(std::string arrays [TAMANO],std::string palabra){
     }
 
 }
+void insertar_noticia(vector <News *> noticias,int posicion_noticia, int posicion){
+    Newsapi newsapi;
+    int mover=posicion_noticia+posicion;
+    for (posicion;mover!=posicion;){
+        if (posicion<mover){
+            noticias[posicion+1]=noticias[posicion++];
+        }
+        else{
+            noticias[posicion-1]=noticias[posicion--];
+        }
+    }
+    }
+#endif
