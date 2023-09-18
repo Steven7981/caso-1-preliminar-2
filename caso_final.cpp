@@ -141,13 +141,13 @@ int main(void)
     Newsapi newsapi;
 
     vector<News *> allrecords = newsapi.getRecords();
-/*
+
     showTop5(allrecords);
 
     mostrarNoticias(allrecords);
 
     borrarNoticias(allrecords,3);
-*/
+
     return 0;
 
     
